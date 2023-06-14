@@ -1,5 +1,12 @@
 # **NLP (Natual Language Processing)**
 
+![NLP](https://github.com/Ramakm/NLP/assets/8182816/a9056eb0-3fc4-4fa9-ba05-3ebed4f00b47,{:width="50px"})
+
+<p align="center">
+  <a href="[NLP](https://www.kaggle.com/code/ramakrushnamohapatra/nlp-syntactic-processing)">
+    <img src="https://img.shields.io/badge/-Kaggle-blue?style=flat&logo=kaggle" alt="Kaggle" width="100">
+  </a>
+</p>
 
 This repository is dedicated to Natural Language Processing (NLP), a field that combines linguistics, computer science, and artificial intelligence to enable machines to understand, interpret, and generate human language. Here, you will find a collection of resources, code samples, and projects related to NLP.
 
@@ -18,10 +25,3 @@ This repository is dedicated to Natural Language Processing (NLP), a field that 
 Whether you are a beginner or an experienced NLP practitioner, this repository serves as a valuable resource to expand your knowledge, sharpen your skills, and foster collaboration within the NLP community. Join us on this exciting journey to unlock the potential of natural language processing and build innovative NLP applications.
 
 Start exploring, learning, and contributing to the NLP Repository today!
-
-
-
-
-
-
-Regenerate response 
