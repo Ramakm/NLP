@@ -38,7 +38,8 @@ Here are some useful resources and links to follow for time series forecasting:
 * **Exponential Smoothing:** Explore exponential smoothing methods like Simple Exponential Smoothing (SES), Holt's Linear Exponential Smoothing, and Holt-Winters' Seasonal Exponential Smoothing. [Link](https://machinelearningmastery.com/time-series-forecasting-performance-measures-with-python/)
 * **Ensemble Methods:** Learn about ensemble methods such as bagging, boosting, and stacking, which combine multiple models to improve forecasting accuracy. [Link](https://www.toptal.com/machine-learning/ensemble-methods-machine-learning)
 * **Cross-Validation and Evaluation:** Understand how to evaluate time series forecasting models using cross-validation techniques and performance metrics like Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE). [Link](https://machinelearningmastery.com/time-series-forecasting-performance-measures-with-python/)
-* **Advanced Techniques:** Explore advanced techniques like DeepAR, WaveNet, and Gaussian Processes for time series forecasting. [Link] (Explore advanced techniques like DeepAR, WaveNet, and Gaussian Processes for time series forecasting)
+* **Advanced Techniques:** Explore advanced techniques like DeepAR, WaveNet, and Gaussian Processes for time series forecasting. 
+[Link](https://towardsdatascience.com/deepar-mastering-time-series-forecasting-with-deep-learning-bc717771ce85)
 
 Remember to adapt the techniques and models based on your specific time series data and problem domain. Happy forecasting!
 
