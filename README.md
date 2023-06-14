@@ -43,3 +43,25 @@ Here are some useful resources and links to follow for time series forecasting:
 
 Remember to adapt the techniques and models based on your specific time series data and problem domain. Happy forecasting!
 
+# **NLP:**
+
+Here are some points with links to follow for NLP:
+
+* **Natural Language Processing (NLP) Overview:** Start with an overview of NLP to understand the basic concepts and techniques. You can refer to this NLP Overview article on Analytics Vidhya.[Link](https://www.analyticsvidhya.com/blog/2020/01/first-text-classification-in-pytorch/)
+
+* **NLTK (Natural Language Toolkit) Tutorial:** NLTK is a popular Python library for NLP. Follow this NLTK Tutorial to learn about its features and how to perform tasks like tokenization, stemming, part-of-speech tagging, and more. [Link](https://www.nltk.org/book/)
+
+* **Spacy Tutorial:** Spacy is another powerful Python library for NLP. Refer to the official Spacy documentation to learn about its capabilities, including tokenization, named entity recognition, dependency parsing, and more.[Link](https://spacy.io/usage)
+
+* **Text Classification with Deep Learning:** Dive into deep learning for text classification using frameworks like TensorFlow and PyTorch. This Text Classification with TensorFlow tutorial by TensorFlow provides a step-by-step guide. [Link](https://www.tensorflow.org/tutorials/keras/text_classification)
+
+* **Named Entity Recognition (NER) Tutorial:** Learn about NER, a subtask of information extraction that identifies and classifies named entities in text. Check out this NER Tutorial on Towards Data Science using NLTK and Spacy.[Link](https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da)
+
+* **Sentiment Analysis Tutorial:** Explore sentiment analysis, which involves determining the sentiment or opinion expressed in text. This Sentiment Analysis Tutorial on DataCamp covers various techniques and libraries.[Link](https://www.datacamp.com/tutorial/simplifying-sentiment-analysis-python)
+
+* **Sequence-to-Sequence Models for Machine Translation:** Understand how sequence-to-sequence models are used for machine translation tasks. This Sequence-to-Sequence Tutorial on Towards Data Science provides an in-depth explanation.[Link](
+
+* **Attention Mechanism in NLP:** Learn about attention mechanisms, which improve the performance of sequence-to-sequence models by focusing on relevant parts of the input sequence. Refer to this Attention Mechanism Tutorial on Towards Data Science.[Link](https://towardsdatascience.com/attn-illustrated-attention-5ec4ad276ee3)
+
+By following these links and tutorials, you'll gain a solid foundation in NLP concepts and techniques, and you'll be able to explore various tasks and applications in the field.
+
