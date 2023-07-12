@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        /* Additional CSS styling */
+        body {
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .chatbox {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .chatbox__support {
+            padding: 20px;
+        }
+
+        .chatbox__header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .chatbox__image--header img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .chatbox__content--header {
+            margin-left: 10px;
+        }
+
+        .chatbox__heading--header {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .chatbox__messages {
+            max-height: 300px;
+            overflow-y: auto;
+            padding-bottom: 15px;
+        }
+
+        .chatbox__footer {
+            display: flex;
+            align-items: center;
+        }
+
+        .chatbox__footer input[type="text"] {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .chatbox__footer .chatbox__send--footer,
+        .chatbox__footer .chatbox__speech--footer {
+            margin-left: 10px;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .chatbox__button {
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        .chatbox__button button {
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        /* Additional CSS styling for the button icon */
+        .chatbox__button button img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Alli-Chatbot</h4>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <!-- Messages will be dynamically added here -->
+            </div>
+           
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Hi, how are you today?">
+                <button class="chatbox__send--footer send__button">Send</button>
+                <button class="chatbox__speech--footer speech__button">Speech Recognition</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" alt="Chatbox"></button>
+        </div>
+    </div>
+</div>
+
+<script>
+    $SCRIPT_ROOT = {{ request.script_root|tojson }};
+
+    const speechButton = document.querySelector('.speech__button');
+
+    speechButton.addEventListener('click', () => {
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        const recognition = new SpeechRecognition();
+
+        recognition.interimResults = true;
+        recognition.lang = 'en-US';
+
+        recognition.addEventListener('result', event => {
+            const transcript = Array.from(event.results)
+                .map(result => result[0])
+                .map(result => result.transcript)
+                .join('');
+
+            const inputField = document.querySelector('.chatbox__footer input');
+            inputField.value = transcript;
+
+            if (event.results[0].isFinal) {
+                const sendButton = document.querySelector('.chatbox__footer .send__button');
+                sendButton.click(); // Simulate a click on the send button
+            }
+        });
+
+        recognition.start();
+    });
+
+    function sendMessage(message) {
+        const inputField = document.querySelector('.chatbox__footer input');
+        const sendButton = document.querySelector('.chatbox__footer .send__button');
+
+        inputField.value = message;
+        sendButton.click(); // Simulate a click on the send button
+    }
+</script>
+<script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>

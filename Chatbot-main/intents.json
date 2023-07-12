@@ -1,0 +1,60 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "sad",
+      "patterns": [
+        "I am really sad",
+        "I am having a low energy day",
+        "the day was really shitty"
+      ],
+      "responses": [
+        "I'm sorry to hear that you're feeling sad today. Its completely normal to experience ups and downs in life , and sometimes we all have days when we feel down. If you would like I'm here to listen and provide support.It can help to talk about what's on your mind"
+      ]
+    },
+    {
+      "tag": "Breakup",
+      "patterns": [
+        "Breakups",
+        "Do you my girfriend ditched me",
+        "I got ditched by my boyfriend"
+        
+      ],
+      "responses": [
+        "Breakups can be difficult and emotionally challenging. It's important to take care of yourself during this time. If you need someone to talk to or seek guidance, I'm here to listen and offer support. Remember to lean on your friends and family for support as well. Take things one day at a time and give yourself space to heal.Remember, everyone's healing process is unique, so give yourself the necessary time and space to heal. If you find yourself struggling with intense emotions or having difficulty moving forward, consider seeking professional help."
+        
+      ]
+    }
+   
+  ]
+}
